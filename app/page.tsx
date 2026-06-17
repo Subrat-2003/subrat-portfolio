@@ -51,7 +51,7 @@ export default function Home() {
       <nav className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#" className="text-lg font-bold tracking-tight">
-            Subrat Jena
+            Subrat Kumar Jena
           </a>
 
           <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
@@ -221,6 +221,12 @@ export default function Home() {
                 >
                   Live Demo
                 </a>
+                <a
+                  href={featuredProject.live}
+                  target="_blank"
+                  className="rounded-xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-300"
+                  > Case Study
+                </a>
               </div>
             </div>
           </div>
@@ -278,6 +284,12 @@ export default function Home() {
                       Live Demo
                     </a>
                   )}
+                    <a
+                    className="text-sm font-semibold text-cyan-400 hover:text-cyan-300"
+                    href={`/projects/${project.slug}`}
+                    > Case Study
+                    </a>
+
                 </div>
               </div>
             </article>
