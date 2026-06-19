@@ -4,7 +4,7 @@ A personal portfolio website built with **Next.js, TypeScript, Tailwind CSS, and
 
 🔗 **Live Portfolio:** [subrat-portfolio-phi.vercel.app](https://subrat-portfolio-phi.vercel.app/)
 🔗 **LinkedIn:** [Subrat Kumar Jena](https://www.linkedin.com/in/subrat-kumar-jena-859011287/)
-🔗 **GitHub:** [Subrat-2003](https://github.com/Subrat-2003)
+🔗 **Email:** [Subrat-mail](subratjena29112003)
 
 ---
 
@@ -140,33 +140,6 @@ The portfolio includes:
 * Education
 * Resume download
 * Contact links
-
----
-
-## Local Setup
-
-To run this project locally:
-
-```bash
-git clone https://github.com/Subrat-2003/subrat-portfolio.git
-cd subrat-portfolio
-npm install
-npm run dev
-```
-
-Open:
-
-```bash
-http://localhost:3000
-```
-
----
-
-## Build Command
-
-```bash
-npm run build
-```
 
 ---
 
