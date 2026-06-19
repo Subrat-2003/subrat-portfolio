@@ -189,4 +189,4 @@ Data Analyst | BI Analyst | Data Science Fresher
 
 * Portfolio: https://subrat-portfolio-phi.vercel.app/
 * LinkedIn: https://www.linkedin.com/in/subrat-kumar-jena-859011287/
-* GitHub: https://github.com/Subrat-2003
+* Email: subratjena2911@gmail.com
