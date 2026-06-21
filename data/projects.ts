@@ -123,7 +123,7 @@ export const projects = [
     metrics: ["Tableau Dashboard", "Global Dataset", "Water Risk", "Regional Insights"],
     stack: ["Tableau", "Excel", "Data Cleaning", "Dashboarding"],
     github: "",
-    live: "",
+    live: "https://public.tableau.com/app/profile/subrat.jena/viz/GlobalWaterVulnerabilityIndex/VulnerabilitybyRegion",
     image: "/projects/water-dashboard.png",
     caseStudy: {
       problem:
