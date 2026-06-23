@@ -222,7 +222,7 @@ export default function Home() {
                   Live Demo
                 </a>
                 <a
-                  href={featuredProject.live}
+                  href={`/projects/${featuredProject.slug}`}
                   target="_blank"
                   className="rounded-xl bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-cyan-300"
                   > Case Study
