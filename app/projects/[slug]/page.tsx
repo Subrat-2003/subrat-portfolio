@@ -160,6 +160,44 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
             ))}
           </div>
         </div>
+        {project.collaborator && (
+  <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 md:col-span-2">
+    <h2 className="text-2xl font-bold">Collaborator</h2>
+
+    <div className="mt-4 space-y-4">
+      {project.collaborator.map(
+        (
+          person: {
+            name: string;
+            role: string;
+            linkedin: string;
+          }
+        ) => (
+          <div
+            key={person.name}
+            className="rounded-xl bg-slate-950 p-4"
+          >
+            <p className="font-semibold">{person.name}</p>
+
+            <p className="mt-1 text-slate-400">
+              {person.role}
+            </p>
+
+            <a
+              href={person.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-cyan-400 hover:text-cyan-300"
+            >
+              LinkedIn Profile
+            </a>
+          </div>
+        )
+      )}
+    </div>
+  </div>
+)}
+
       </section>
     </main>
   );

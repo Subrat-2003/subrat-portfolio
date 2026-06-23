@@ -9,6 +9,13 @@ export const projects = [
       "Built a scalable SEC data pipeline using Polars, Parquet, FinBERT sentiment, XGBoost, and SHAP explainability for 12-month corporate distress forecasting.",
     metrics: ["60GB+ SEC Data", "4.5x Lift", "87% Recall", "38% Precision"],
     stack: ["Polars", "Parquet", "FinBERT", "XGBoost", "SHAP", "Streamlit"],
+    collaborator: [
+      {
+        name: "Aryan Makka",
+        role: "Lead Backend Engineer.",
+        linkedin: "https://www.linkedin.com/in/aryan-makka-861bb6251/",
+      },
+    ],
     github: "https://github.com/Subrat-2003/Financial-distress-early-warning-system",
     live: "https://huggingface.co/spaces/Sk-Jena/sec-risk-dashboard",
     image: "/projects/fdews-dashboard.png",
@@ -47,6 +54,13 @@ export const projects = [
       "Built a full-stack forecasting dashboard to visualize projected balance, pending invoice pressure, and short-term survival windows under irregular payment cycles.",
     metrics: ["30-Day Runway", "Sub-200ms Views", "FastAPI Backend", "Next.js Frontend"],
     stack: ["FastAPI", "XGBoost", "Random Forest", "Supabase", "Next.js", "Recharts"],
+    collaborator: [
+      {
+        name: "Gayatri Palai",
+        role: "Frontend Engineering",
+        linkedin: "https://www.linkedin.com/in/gayatri-palai-a286b6271/",
+      },
+    ],
     github:
       "https://github.com/Subrat-2003/Cashflow-Forecasting-and-Risk-Simulation-for-Freelancers",
     live: "https://cashflow-forecasting-and-risk-simul.vercel.app/",
