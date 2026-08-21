@@ -28,7 +28,7 @@ It highlights projects involving:
 
 ### 1. FDEWS | Financial Distress Prediction
 
-Processed **60GB+ SEC EDGAR filings** to build a financial distress prediction system that identifies early insolvency signals up to 12 months in advance.
+Processed **60GB+ SEC EDGAR filings** to build a financial distress prediction and forensic intelligence system that identifies early insolvency signals up to 12 months in advance and enables evidence-grounded investigation of financial risks.
 
 **Key highlights:**
 
@@ -39,8 +39,9 @@ Processed **60GB+ SEC EDGAR filings** to build a financial distress prediction s
 * Delivered a 4.5x lift over random screening
 * Added SHAP explainability for model interpretation
 * Deployed live dashboard on Hugging Face Spaces
+* Integrated a Forensic RAG Intelligence layer to retrieve relevant financial evidence and generate grounded risk explanations for investigating predicted distress signals.
 
-**Tech Stack:** Polars, Parquet, FinBERT, XGBoost, SHAP, Streamlit, Hugging Face Spaces
+**Tech Stack:** Polars, Parquet, FinBERT, XGBoost, SHAP, RAG, Generative AI, Streamlit, Hugging Face Spaces
 
 ---
 
@@ -158,7 +159,7 @@ https://subrat-portfolio-phi.vercel.app/
 ## Contact
 
 **Subrat Kumar Jena**
-Data Analyst | BI Analyst | Data Science Fresher
+Data Analyst | BI Analyst | Data Science 
 
 * Portfolio: https://subrat-portfolio-phi.vercel.app/
 * LinkedIn: https://www.linkedin.com/in/subrat-kumar-jena-859011287/
