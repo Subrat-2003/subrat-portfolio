@@ -19,10 +19,10 @@ It highlights projects involving:
 * Business intelligence reporting
 * Machine learning model validation
 * Financial risk prediction
-* RAG
+* Evidence-grounded RAG
 * Explainable AI
 * Generative AI
-* Document Retrieval
+* Financial Document Retrieval
 * Full-stack data product development
 
 ---
