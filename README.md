@@ -110,6 +110,8 @@ Created a Tableau dashboard analyzing global water vulnerability, infrastructure
 
 * Vercel
 
+---
+
 ### Data & Analytics Skills Showcased
 
 * Python
