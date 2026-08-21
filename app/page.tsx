@@ -6,8 +6,8 @@ const skills = [
     items: ["Advanced Excel", "SQL", "Tableau", "Power BI", "Dashboarding"],
   },
   {
-    category: "Python & ML",
-    items: ["Python", "Pandas", "NumPy", "Scikit-Learn", "XGBoost", "CatBoost"],
+    category: "AI & ML",
+    items: ["Python", "Pandas", "NumPy", "Scikit-Learn", "XGBoost", "CatBoost", "SHAP", "Generative AI", "RAG"],
   },
   {
     category: "Data Engineering",
@@ -15,7 +15,7 @@ const skills = [
   },
   {
     category: "Deployment",
-    items: ["FastAPI", "Streamlit", "Hugging Face", "Vercel", "GitHub Actions"],
+    items: ["FastAPI", "Streamlit", "Hugging Face", "Vercel", "Render", "GitHub Actions"],
   },
 ];
 
@@ -146,7 +146,7 @@ export default function Home() {
           <div className="mt-6 border-t border-slate-800 pt-6">
             <p className="text-sm font-semibold text-cyan-400">Strongest proof</p>
             <p className="mt-2 text-slate-300">
-              60GB+ SEC filings processed into an explainable financial risk system.
+              60GB+ SEC filings transformed into a predictive financial-risk system with SHAP explainability and forensic RAG intelligence.
             </p>
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-4 px-6 py-8 md:grid-cols-4">
           {[
             ["60GB+", "SEC filings processed"],
-            ["4.5x", "Lift over crash baseline"],
+            ["4.5x", "Lift over random screening"],
             ["0.81", "Macro F1 in credit model"],
             ["30-Day", "Runway forecasting"],
           ].map(([value, label]) => (
@@ -171,7 +171,7 @@ export default function Home() {
       <section id="projects" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-bold">Featured Project</h2>
         <p className="mt-3 max-w-2xl text-slate-400">
-          My strongest technical project across data engineering, ML, NLP, deployment, and explainability.
+          My strongest technical project across data engineering, machine learning, NLP, explainability, and retrieval-grounded AI.
         </p>
 
         <article className="mt-10 overflow-hidden rounded-3xl border border-cyan-500/30 bg-slate-900/80">
@@ -300,7 +300,7 @@ export default function Home() {
       <section id="skills" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-bold">Technical Skills</h2>
         <p className="mt-3 max-w-2xl text-slate-400">
-          Organized around analytics, BI reporting, ML workflows, and deployable data systems.
+          Organized around analytics, BI reporting, machine learning, AI-assisted investigation, and deployable data systems.
         </p>
 
         <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
