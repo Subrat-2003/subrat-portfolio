@@ -22,6 +22,12 @@ export const projects = [
     caseStudy: {
       problem:
         "Corporate distress prediction is difficult because financial warning signs are scattered across structured ratios, SEC filings, and management commentary. The project aimed to detect insolvency signals up to 12 months in advance.",
+      myRole: "Project Lead & Lead ML Architect",
+      myContribution: [
+    "Engineered the multimodal intelligence layer, extracting MD&A executive sentiment via FinBERT and fusing it with 16 financial ratios into a 17-feature Gold feature store.",
+    "Benchmarked XGBoost against LSTM on imbalanced distress data, optimizing for 91% recall (0.94 AUC-ROC) and implementing SHAP value interpretability to validate leading risk drivers.",
+    "Architected production reliability safeguards, including a Feature Order Lock to eliminate silent prediction drift and a Forensic RAG pipeline (Groq + Llama 3.3 + ChromaDB) for grounded risk explanations.",
+       ],
       data:
         "Processed 60GB+ SEC EDGAR filings and transformed 4.9M+ intermediate records into company-level inference records using Polars Lazy Evaluation and Parquet-backed out-of-core processing.",
       approach: [
@@ -70,16 +76,23 @@ export const projects = [
     caseStudy: {
       problem:
         "Freelancers deal with irregular payments, delayed invoices, and unstable monthly cashflow. Static budgeting tools do not reflect that uncertainty well.",
+      myRole: "Lead AI Engineer & System Architect",
+      myContribution: [
+        "Engineered a distributed 3-tier architecture with an asynchronous FastAPI intelligence gateway on Render and Next.js cockpit on Vercel, implementing a UUID polling workflow to eliminate serverless API timeouts during heavy inference.",
+        "Built a stochastic cashflow simulation engine with rolling forecasting and risk corridors, featuring isolated random number generation (RNG) and custom stress parameters (Liquidity Lag & Expense Warp).",
+        "Architected an on-demand intelligence and voice pipeline integrating Groq-hosted Llama 3.3 (structured JSON mode) with edge-tts for low-latency, multilingual (English/Hindi) audio strategic briefings.",
+        "Implemented a SHA-256 cryptographic integrity shield with deterministic seeding and tamper-detection gates to cryptographically verify transaction ledgers before inference.",
+       ],
       data:
         "The platform uses transaction records, invoice status, income patterns, and recent financial behavior to forecast short-term runway.",
       approach: [
-        "Parsed non-standard SEC HTML filings with inconsistent tags, numeric formats, and missing fiscal markers.",
-        "Engineered 17 financial ratios covering liquidity, leverage, profitability, efficiency, and cashflow risk.",
-        "Extracted MD&A sentiment using FinBERT and fused it with structured financial ratios.",
-        "Benchmarked XGBoost against LSTM for distress classification under class imbalance.",
-        "Used SHAP to explain model outputs and trace predictions back to financial and sentiment drivers.",
-        "Integrated a Forensic RAG Intelligence layer to retrieve relevant financial evidence and generate grounded risk explanations, complementing SHAP-based model interpretation.",
-      ],
+        "Engineered a distributed 3-tier cloud architecture with an asynchronous FastAPI gateway on Render and Next.js frontend on Vercel, utilizing a UUID polling loop to eliminate serverless timeouts.",
+        "Constructed an ensemble rolling cashflow forecasting model (XGBoost 60% + Random Forest 40%) to balance sensitivity to economic shifts with structural baseline stability.",
+        "Designed a stochastic financial simulation engine with isolated RNG and configurable stress parameters (Liquidity Lag and Expense Warp) to evaluate runway under worst-case liquidity shocks.",
+        "Formulated dynamic risk corridors and a deterministic Financial Confidence score to project cash survivability thresholds across 30-day horizons.",
+        "Implemented a SHA-256 cryptographic integrity shield with deterministic hashing to detect ledger tampering and prevent corrupt records from entering the inference pipeline.",
+        "Built an on-demand strategic briefing and neural voice pipeline using Groq-hosted Llama 3.3 in structured JSON mode integrated with edge-tts for low-latency multilingual audio synthesis.",
+],
       results: [
         "Built a live full-stack forecasting platform with FastAPI, Supabase, and Next.js.",
         "Created dashboard views for survival windows, projected balance, and pending invoice pressure.",
