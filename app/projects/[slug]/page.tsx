@@ -113,6 +113,27 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
           <p className="mt-4 leading-7 text-slate-300">{project.caseStudy.problem}</p>
         </div>
 
+      {project.caseStudy.myRole && (
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h2 className="text-2xl font-bold">My Role</h2>
+            <p className="mt-4 leading-7 text-slate-300">
+              {project.caseStudy.myRole}
+              </p>
+          </div>
+      )}
+
+      {project.caseStudy.myContribution && (
+          <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+            <h2 className="text-2xl font-bold">My Contribution</h2>
+
+            <ul className="mt-4 space-y-3 text-slate-300">
+              {project.caseStudy.myContribution.map((item) => (
+                   <li key={item}>• {item}</li>
+            ))}
+               </ul>
+             </div>
+      )}
+      
         <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
           <h2 className="text-2xl font-bold">Data</h2>
           <p className="mt-4 leading-7 text-slate-300">{project.caseStudy.data}</p>
