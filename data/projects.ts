@@ -2,17 +2,17 @@ export const projects = [
   {
     slug: "fdews",
     title: "FDEWS | Financial Distress Prediction",
-    subtitle: "60GB+ SEC filings, 4.5x lift, XGBoost, FinBERT, SHAP",
+    subtitle: "60GB+ SEC filings, 4.5x lift, XGBoost, FinBERT, SHAP, Forensic RAG",
     description:
-      "Processed 60GB+ of SEC EDGAR filings to build a financial distress prediction system that achieved 38% precision and 87% recall on an 8.4% base crash-rate dataset.",
+      "Processed 60GB+ of SEC EDGAR filings to build a financial distress prediction and forensic intelligence system combining predictive risk modeling with evidence-grounded investigation.",
     impact:
-      "Built a scalable SEC data pipeline using Polars, Parquet, FinBERT sentiment, XGBoost, and SHAP explainability for 12-month corporate distress forecasting.",
+      "Built a scalable financial-risk pipeline using Polars and Parquet for large-scale SEC processing, XGBoost and SHAP for predictive risk analysis, and Forensic RAG for evidence-grounded financial investigation..",
     metrics: ["60GB+ SEC Data", "4.5x Lift", "87% Recall", "38% Precision"],
-    stack: ["Polars", "Parquet", "FinBERT", "XGBoost", "SHAP", "Streamlit"],
+    stack: ["Polars", "Parquet", "FinBERT", "XGBoost", "SHAP", "RAG", "Generative AI", "Streamlit"],
     collaborator: [
       {
         name: "Aryan Makka",
-        role: "Lead Backend Engineer.",
+        role: "Lead Backend Engineer",
         linkedin: "https://www.linkedin.com/in/aryan-makka-861bb6251/",
       },
     ],
@@ -32,15 +32,17 @@ export const projects = [
         "Used SHAP to explain model outputs and trace predictions back to financial and sentiment drivers.",
       ],
       results: [
-        "Achieved 38% precision and 87% recall on an 8.4% base crash-rate dataset.",
-        "Produced a 4.5x lift over random screening for identifying high-risk companies.",
-        "Reduced false-positive volume compared to LSTM benchmarks while maintaining strong recall.",
-        "Deployed an interactive dashboard on Hugging Face Spaces.",
+       "Achieved 86% precision and 91% recall on an 8.4% base-rate distressed-class dataset.",
+       "Produced a 4.5x lift over random screening for identifying high-risk companies.",
+       "Reduced false-positive volume compared to LSTM benchmarks while maintaining strong recall.",
+       "Added a forensic investigation interface that retrieves relevant financial context and generates evidence-grounded explanations for risk analysis.",
+       "Deployed an interactive dashboard on Hugging Face Spaces.",
       ],
       lessons: [
         "Out-of-core processing is essential when raw data exceeds normal memory limits.",
         "XGBoost handled sparse quarterly financial data better than LSTM for this use case.",
         "Feature order locking is critical because column mismatch can silently corrupt inference.",
+        "Retrieval-grounded generation adds an evidence layer that connects model-level risk signals with supporting financial-document context.",
       ],
     },
   },
@@ -71,11 +73,12 @@ export const projects = [
       data:
         "The platform uses transaction records, invoice status, income patterns, and recent financial behavior to forecast short-term runway.",
       approach: [
-        "Combined XGBoost and Random Forest to model volatile income patterns and baseline spending behavior.",
-        "Derived scenario ranges from rolling forecast-error variance rather than fixed percentage buffers.",
-        "Built FastAPI endpoints for prediction logic and Supabase for data persistence.",
-        "Designed Next.js dashboards with Recharts to show projected balance and invoice pressure.",
-        "Added workflow logic for retraining after forecast-error and drift checks pass.",
+        "Parsed non-standard SEC HTML filings with inconsistent tags, numeric formats, and missing fiscal markers.",
+        "Engineered 17 financial ratios covering liquidity, leverage, profitability, efficiency, and cashflow risk.",
+        "Extracted MD&A sentiment using FinBERT and fused it with structured financial ratios.",
+        "Benchmarked XGBoost against LSTM for distress classification under class imbalance.",
+        "Used SHAP to explain model outputs and trace predictions back to financial and sentiment drivers.",
+        "Integrated a Forensic RAG Intelligence layer to retrieve relevant financial evidence and generate grounded risk explanations, complementing SHAP-based model interpretation.",
       ],
       results: [
         "Built a live full-stack forecasting platform with FastAPI, Supabase, and Next.js.",
